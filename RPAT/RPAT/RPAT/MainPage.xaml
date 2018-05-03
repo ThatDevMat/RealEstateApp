@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:RPAT"
+             x:Class="RPAT.MainPage" >
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="1, 20, 1, 5" />             
+        </OnPlatform>
+    </ContentPage.Padding>
+    <ContentPage.Content>
+        <ScrollView x:Name="scroll">
+            <StackLayout>
+            <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <!-- Row 0 -->
+            <Label Text="Rental Property Analysis Tool" Grid.Row="0" Font="Large" Grid.ColumnSpan="2" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold"/>
+            <!-- Row 1 -->
+            <Label Text="Address of property:" Grid.Row="1" Grid.Column="0" Font="Small" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" />
+            <Entry Grid.Row="1" Grid.Column="1" Placeholder="Property Address" Text="{Binding PropertyAddress}" />
+            <!-- Row 2 -->
+            <Label Text="Number of units:" Grid.Row="2" Grid.Column="0" Font="Small" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" />
+                    <Entry Grid.Row="2" Grid.Column="1" Placeholder="Number of Units" Keyboard="Numeric" Text="3" x:Name="NumOfUnits"/>
+            <!-- Row 3 -->
+            <Label Text="Each Unit rent/month:" Grid.Row="3" Grid.Column="0" Font="Small" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" />
+                    <Entry Grid.Row="3" Grid.Column="1" Placeholder="Rent per unit per month" Keyboard="Numeric" Text="1300"  x:Name="PerUnitRentPerMonth" />
+            <!-- Row 4 -->
+            <Label Text="For the whole property, landlord - paid expenses:" Grid.Row="4"  Grid.ColumnSpan="2" Font="Small" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" />
+            <!-- Row 5 -->
+            <Label Text=" - Taxes (annual):" Grid.Row="5" Grid.Column="0" Font="Small" HorizontalTextAlignment="End" VerticalTextAlignment="Center" />
+                    <Entry Grid.Row="5" Grid.Column="1" Placeholder="Annual Taxes" Keyboard="Numeric" Text="9013" x:Name="AnnualTaxes" />
+            <!-- Row  6-->
+            <Label Text=" - Insurance (annual):" Grid.Row="6" Grid.Column="0" Font="Small" HorizontalTextAlignment="End" VerticalTextAlignment="Center" />
+                    <Entry Grid.Row="6" Grid.Column="1" Placeholder="Annual Insurance" Keyboard="Numeric" Text="2047" x:Name="AnnualInsurance" />
+            <!-- Row  7-->
+            <Label Text=" - Electric (monthly):" Grid.Row="7" Grid.Column="0" Font="Small" HorizontalTextAlignment="End" VerticalTextAlignment="Center" />
+                    <Entry Grid.Row="7" Grid.Column="1" Placeholder="Monthly electric bill" Keyboard="Numeric" Text="2000" x:Name="MonthlyElectric" />
+            <!-- Row  8-->
+            <Label Text=" - Gas (monthly):" Grid.Row="8" Grid.Column="0" Font="Small" HorizontalTextAlignment="End" VerticalTextAlignment="Center" />
+                    <Entry Grid.Row="8" Grid.Column="1" Placeholder="Monthly gas bill" Keyboard="Numeric" Text="100" x:Name="MonthlyGas" />
+            <!-- Row  9-->
+            <Label Text=" - Water (monthly):" Grid.Row="9" Grid.Column="0" Font="Small" HorizontalTextAlignment="End" VerticalTextAlignment="Center" />
+                    <Entry Grid.Row="9" Grid.Column="1" Placeholder="Monthly water bill" Keyboard="Numeric" Text="70" x:Name="MonthlyWater" />
+            <!-- Row 10 -->
+            <Label Text=" - Maintenance (monthly):" Grid.Row="10" Grid.Column="0" Font="Small" HorizontalTextAlignment="End" VerticalTextAlignment="Center" />
+                    <Entry Grid.Row="10" Grid.Column="1" Placeholder="Monthly maintenance bill" Keyboard="Numeric" Text="3" x:Name="MonthlyMaintenance" />
+            <!-- Row  11-->
+            <Label Text=" - Property Mgmt (% of rent):" Grid.Row="11" Grid.Column="0" Font="Small" HorizontalTextAlignment="End" VerticalTextAlignment="Center" />
+                    <Entry Grid.Row="11" Grid.Column="1" Placeholder="% Property managment cost" Keyboard="Numeric" Text="5" x:Name="PropertyMgmtPercent" />
+            <!-- Row  12-->
+            <Label Text=" - Vacany loss (% of rent):" Grid.Row="12" Grid.Column="0" Font="Small" HorizontalTextAlignment="End" VerticalTextAlignment="Center" />
+                    <Entry Grid.Row="12" Grid.Column="1" Placeholder="% Vacany loss" Keyboard="Numeric" Text="3" x:Name="VacanyLossPercent" />
+            <!-- Row 13 -->
+            <Label Text="Asking price:" Grid.Row="13" Grid.Column="0" Font="Small" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" />
+            <Entry Grid.Row="13" Grid.Column="1" Placeholder="Asking price" Text="{Binding AskingPrice}" />
+            <!-- Row 14 -->
+            <Label Text="Offer:" Grid.Row="14" Grid.Column="0" Font="Small" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" />
+            <Entry Grid.Row="14" Grid.Column="1" Placeholder="Offer" Text="{Binding Offer}" />
+            <!-- Row 15 -->
+            <Label Text="Closing cost:" Grid.Row="15" Grid.Column="0" Font="Small" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" />
+                    <Entry Grid.Row="15" Grid.Column="1" Placeholder="Closing cost" Text="10200" x:Name="ClosingCost" />
+            <!-- Row 16 -->
+            <Label Text="Down payment:" Grid.Row="16" Grid.Column="0" Font="Small" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" />
+                    <Entry Grid.Row="16" Grid.Column="1" Placeholder="Down payment" Text="85000" x:Name="DownPayment" />
+            <!-- Row 17 -->
+            <Label Text="Renovation cost:" Grid.Row="17" Grid.Column="0" Font="Small" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" />
+                    <Entry Grid.Row="17" Grid.Column="1" Placeholder="Renovation cost" Text="50000" x:Name="RenovationCost"/>
+            <!-- Row 18 -->
+            <Label Text="Mortgage term (years):" Grid.Row="18" Grid.Column="0" Font="Small" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" />
+                    <Entry Grid.Row="18" Grid.Column="1" Placeholder="Mortgage term" Text="5"  x:Name="MortgageTerm"/>
+            <!-- Row 19 -->
+            <Label Text="Interest Rate (%):" Grid.Row="19" Grid.Column="0" Font="Small" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" />
+                    <Entry Grid.Row="19" Grid.Column="1" Placeholder="Interest rate" Text="7.5" x:Name="InterestRate" />
+            <!-- Row 20 -->
+            <Label Text="-------------" Grid.Row="20" Font="Large" Grid.ColumnSpan="2" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold"/>
+            <!-- Row 21 -->
+            <Button Text="Calculate!" Clicked="OnCalculateClicked" Grid.Row="21"  Grid.Column="0" Font="Large"/>
+            <Button Text="Clear!" Clicked="OnClearClicked" Grid.Row="21" Grid.Column="1" Font="Large"/>
+            <!-- Row 22 -->
+            <Label Text="Total Income (annual):" Grid.Row="22" Grid.Column="0" Font="Small" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" />
+            <Label Text="{Binding TotalIncome}" x:Name="TotalIncome"  Grid.Row="22" Grid.Column="1" Font="Small" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" />
+            <!-- Row 23 -->
+            <Label Text="Total Expenses (annual)" Grid.Row="23" Grid.Column="0" Font="Small" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" />
+            <Label Text="{Binding TotalExpenses }" x:Name="TotalExpenses"  Grid.Row="23" Grid.Column="1" Font="Small" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" />
+            <!-- Row 24 -->
+            <Label Text="Net Income (annual):" Grid.Row="24" Grid.Column="0" Font="Small" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" />
+            <Label Text="{Binding NetIncome}" x:Name="NetIncome"  Grid.Row="24" Grid.Column="1" Font="Small" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" />
+            <!-- Row 25 -->
+            <Label Text="Leveraged Net ROI (pre-tax):" Grid.Row="25" Grid.Column="0" Font="Small" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" />
+            <Label Text="{Binding LeveragedNetROI}" x:Name="LeveragedNetROI"  Grid.Row="25" Grid.Column="1" Font="Small" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" />
+            <!-- Row 26 -->
+            <Label Text="Cash on cash return (%):" Grid.Row="26" Grid.Column="0" Font="Small" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" />
+            <Label Text="{Binding CashOnCashReturn}" x:Name="CashOnCashReturn"  Grid.Row="26" Grid.Column="1" Font="Small" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" />
+            <!-- Row 27 -->
+            <Label Text="Annual pre tax cash flow:" Grid.Row="27" Grid.Column="0" Font="Small" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" />
+            <Label Text="{Binding AnnualPreTaxCashFlow}" x:Name="AnnualPreTaxCashFlow"  Grid.Row="27" Grid.Column="1" Font="Small" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" />
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

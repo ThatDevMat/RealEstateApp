@@ -1,0 +1,11 @@
+C:\Users\suresh.kumar\documents\visual studio 2017\Projects\RPAT\RPAT\RPAT\bin\Release\netstandard2.0\RPAT.deps.json
+C:\Users\suresh.kumar\documents\visual studio 2017\Projects\RPAT\RPAT\RPAT\bin\Release\netstandard2.0\RPAT.dll
+C:\Users\suresh.kumar\documents\visual studio 2017\Projects\RPAT\RPAT\RPAT\bin\Release\netstandard2.0\RPAT.pdb
+C:\Users\suresh.kumar\documents\visual studio 2017\Projects\RPAT\RPAT\RPAT\obj\Release\netstandard2.0\RPAT.csprojResolveAssemblyReference.cache
+C:\Users\suresh.kumar\documents\visual studio 2017\Projects\RPAT\RPAT\RPAT\obj\Release\netstandard2.0\RPAT.csproj.CoreCompileInputs.cache
+C:\Users\suresh.kumar\documents\visual studio 2017\Projects\RPAT\RPAT\RPAT\obj\Release\netstandard2.0\RPAT.App.xaml.g.cs
+C:\Users\suresh.kumar\documents\visual studio 2017\Projects\RPAT\RPAT\RPAT\obj\Release\netstandard2.0\RPAT.MainPage.xaml.g.cs
+C:\Users\suresh.kumar\documents\visual studio 2017\Projects\RPAT\RPAT\RPAT\obj\Release\netstandard2.0\RPAT.AssemblyInfoInputs.cache
+C:\Users\suresh.kumar\documents\visual studio 2017\Projects\RPAT\RPAT\RPAT\obj\Release\netstandard2.0\RPAT.AssemblyInfo.cs
+C:\Users\suresh.kumar\documents\visual studio 2017\Projects\RPAT\RPAT\RPAT\obj\Release\netstandard2.0\RPAT.dll
+C:\Users\suresh.kumar\documents\visual studio 2017\Projects\RPAT\RPAT\RPAT\obj\Release\netstandard2.0\RPAT.pdb
